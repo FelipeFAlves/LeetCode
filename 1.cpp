@@ -2,7 +2,7 @@
 using namespace std;
 vector<int> twoSum(vector<int>& nums, int target) {
     //valor / indice
-    unordered_map<int,int> aux;
+    unordered_map<int,int> aux; // Isso é hash
     vector<int> resp;
     for(int i=0;i<nums.size();i++){
         int diff = target -nums[i];
