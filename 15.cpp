@@ -25,13 +25,6 @@ vector<vector<int>> threeSum(vector<int>& nums) {
         auto teste = twoSum(nums, -nums[i],i);
         resultado.insert(resultado.end(), teste.begin(), teste.end());
     }
-
-    // for (const auto& triplet : resultado) {
-    //     for (int num : triplet) {
-    //         cout << num << " ";
-    //     }
-    //     cout << endl;
-    // }
     return resultado;
 }
 
