@@ -35,13 +35,7 @@ vector<string>  letterCombinations(string digits) {
     auto eita = keyboard.find(digits[0]);
     for(int i=0;i<eita->second.size();i++){
         backtrack(0,jooj+eita->second[i],digits.size(),digits,comb);
-        // comb.push_back(resp);
     }
-    // for (const auto& s : comb) {
-    //     cout << s << " ";
-    // }
-    // cout << endl;
-
     return comb;
 }
 int main(){
